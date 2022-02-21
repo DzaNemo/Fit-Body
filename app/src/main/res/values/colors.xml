@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#E91E63</color>
+    <color name="primary_dark">#C2185B</color>
+    <color name="accent">#E91E63</color>
+    <color name="primary_text">#212121</color>
+    <color name="view_pager_back">#FF3A7D</color>
+
+    <color name="selected_tab_text">#ffffff</color>
+    <color name="tab_text">#dadada</color>
+
+    <color name="navigationBarColor">#212121</color>
+    <color name="mainSections">#BDBDBD</color>
+
+    <color name="toastBackground">#212121</color>
+    <color name="toastBackgroundLight">#757575</color>
+    <color name="toastText">#ffffff</color>
+
+</resources>

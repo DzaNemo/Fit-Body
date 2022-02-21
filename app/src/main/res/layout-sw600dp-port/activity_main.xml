@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="link.fitbody.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:clickable="true"
+            android:onClick="onCalcButtonClick"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/mainSections"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/idealWeightButton">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/weight"
+                android:id="@+id/weightImageView"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:text="Ideal Weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weightTextView"
+                android:layout_weight="0"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/activity_vertical_margin"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/mainSections"
+            android:onClick="onCalcButtonClick"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:id="@+id/calorieButton">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/calorie"
+                android:id="@+id/calorieImageView"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:text="Calorie Calculator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calorieTextView"
+                android:layout_weight="0"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/activity_vertical_margin"
+            android:foreground="?attr/selectableItemBackground"
+            android:background="@color/mainSections"
+            android:onClick="onCalcButtonClick"
+            android:layout_marginStart="16dp"
+            android:id="@+id/bodyTypeButton">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:srcCompat="@drawable/body"
+                android:id="@+id/bodyImageView"
+                android:layout_weight="1"
+                android:padding="@dimen/activity_vertical_margin" />
+
+            <TextView
+                android:text="Body Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bodyTextView"
+                android:layout_weight="0"
+                android:textSize="30sp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/fragment_container"
+        android:layout_weight="2">
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

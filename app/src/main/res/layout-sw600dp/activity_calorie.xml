@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calorie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="link.fitbody.CalorieActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/calorie"
+        android:id="@+id/introImageView"
+        android:layout_weight="1"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_weight="0"
+        android:id="@+id/contentLinearLayout">
+
+        <TextView
+            android:text="@string/calorie_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <TextView
+            android:text="Please, fill in the data bellow:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introMsgTextView"
+            android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/ageEditText"
+            android:hint="@string/age_hint"
+            android:inputType="number"
+            android:imeOptions="actionNext" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/genderRadioGroup">
+
+            <RadioButton
+                android:text="@string/male_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/maleRadioButton"
+                android:layout_weight="1"
+                android:checked="true" />
+
+            <RadioButton
+                android:text="@string/female_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/femaleRadioButton"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/heightEditText"
+            android:hint="@string/height_hint"
+            android:inputType="number"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/weightEditText"
+            android:hint="@string/weight_hint"
+            android:inputType="number"
+            android:imeOptions="normal" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/activitySpinner"
+            android:entries="@array/spinner_strings" />
+
+        <Button
+            android:text="@string/calculate_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculateButton"
+            android:onClick="onCalculateClick"/>
+
+    </LinearLayout>
+
+</LinearLayout>
